@@ -29,7 +29,7 @@ class Chain(base.Bijector):
 
   Bijectors are composable: if `f` and `g` are bijectors, then `g o f` is also
   a bijector. Given a sequence of bijectors `[f1, ..., fN]`, this class
-  implements the bijector defined by `fN o ... o f1`.
+  implements the bijector defined by `f1 o ... o fN`.
 
   NOTE: the bijectors are applied in reverse order from the order they appear in
   the sequence. For example, consider the following code where `f` and `g` are
